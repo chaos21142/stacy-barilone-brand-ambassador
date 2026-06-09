@@ -1,1 +1,870 @@
-FULL_INDEX_HTML_CONTENT_HERE_FROM_ARTIFACTS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacy Barilone | Brand Ambassador &amp; Event Host</title>
+  <meta name="description" content="Stacy Barilone is a professional brand ambassador and event host who learns brands, embodies them, and creates authentic human connections at motorcycle rallies, experiential activations, and high-energy events nationwide.">
+  <meta name="keywords" content="brand ambassador, event host, MC, motorcycle events, experiential activations, Laconia Bike Week, brand activation, event planning">
+  <meta property="og:title" content="Stacy Barilone | Brand Ambassador &amp; Event Host">
+  <meta property="og:description" content="I don’t just represent brands. I learn them, embody them, and make people feel them. Professional brand ambassador for national rallies, dealership activations, and lifestyle events.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/stage-performance.jpg">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Brand Design System Configuration (exact from Design agent) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-navy': '#0D1B2A',
+            'brand-gold': '#D4AF37',
+            'brand-red': '#9C1F1F',
+          },
+          fontFamily: {
+            sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+          letterSpacing: {
+            'widest-brand': '0.12em',
+            'wider-brand': '0.08em',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* =========================================
+       STACY BARILONE — EXACT BRAND TOKENS + POLISH
+       Deep Navy #0D1B2A | Rich Gold #D4AF37 | Red Trim #9C1F1F (sparingly)
+       ========================================= */
+    :root {
+      --brand-navy: #0D1B2A;
+      --brand-gold: #D4AF37;
+      --brand-red: #9C1F1F;
+      --transition-smooth: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--brand-navy);
+      color: #E8E8E8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .gold-text,
+    h1, h2, h3 {
+      color: var(--brand-gold);
+    }
+
+    .gold-text-bold {
+      color: var(--brand-gold);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    /* Elegant gold underline accent on section titles — used sparingly for hierarchy */
+    .gold-underline {
+      position: relative;
+      display: inline-block;
+    }
+    .gold-underline::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 48px;
+      height: 1px;
+      background-color: var(--brand-gold);
+      opacity: 0.9;
+    }
+    @media (min-width: 768px) {
+      .gold-underline::after { width: 64px; bottom: -12px; }
+    }
+
+    .section {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    @media (min-width: 768px) {
+      .section { padding-top: 6rem; padding-bottom: 6rem; }
+    }
+
+    .container-brand {
+      max-width: 80rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    /* Premium cards — thin red trim ONLY (per strict design rules) */
+    .premium-card {
+      background-color: #0F2438;
+      border: 1px solid rgba(156, 31, 31, 0.25);
+      transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+    }
+    .premium-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+      border-color: rgba(156, 31, 31, 0.45);
+    }
+
+    .card-gold-underline {
+      position: relative;
+      display: inline-block;
+    }
+    .card-gold-underline::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 32px;
+      height: 1px;
+      background-color: var(--brand-gold);
+    }
+
+    /* Red trim utilities — used intentionally and SPARINGLY */
+    .red-trim-thin {
+      border: 1px solid rgba(156, 31, 31, 0.3);
+    }
+    .divider-red {
+      height: 1px;
+      background-color: rgba(156, 31, 31, 0.25);
+    }
+
+    /* Navbar */
+    .nav-link {
+      position: relative;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #D4AF37;
+      transition: color var(--transition-smooth);
+    }
+    .nav-link:hover {
+      color: #E8D9A0;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 1px;
+      background-color: var(--brand-gold);
+      transition: width var(--transition-smooth);
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    /* Luxurious buttons */
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 2rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background-color: var(--brand-gold);
+      color: var(--brand-navy);
+      border: 1px solid var(--brand-gold);
+      transition: all var(--transition-smooth);
+    }
+    .btn-gold:hover {
+      background-color: #E8D9A0;
+      border-color: #E8D9A0;
+    }
+
+    .btn-gold-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 2rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background-color: transparent;
+      color: var(--brand-gold);
+      border: 1px solid var(--brand-gold);
+      transition: all var(--transition-smooth);
+    }
+    .btn-gold-outline:hover {
+      background-color: var(--brand-gold);
+      color: var(--brand-navy);
+      border-color: var(--brand-red);
+    }
+
+    .btn-gold:focus-visible,
+    .btn-gold-outline:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.25);
+      border-color: var(--brand-gold);
+    }
+
+    /* Form styling — luxurious modern */
+    .form-input {
+      background-color: rgba(15, 36, 56, 0.6);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      color: #E8E8E8;
+      padding: 0.875rem 1rem;
+      font-size: 1rem;
+      transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+    }
+    .form-input::placeholder {
+      color: rgba(232, 232, 232, 0.5);
+    }
+    .form-input:focus {
+      border-color: var(--brand-gold);
+      box-shadow: 0 0 0 1px var(--brand-gold);
+      background-color: rgba(15, 36, 56, 0.8);
+    }
+    .form-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+      margin-bottom: 0.375rem;
+      display: block;
+    }
+
+    .success-state {
+      background-color: rgba(15, 36, 56, 0.8);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--brand-gold);
+    }
+
+    /* Photography — elegant integration */
+    .photo-elegant {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Services */
+    .service-item {
+      position: relative;
+      padding-left: 1.25rem;
+    }
+    .service-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.6rem;
+      width: 6px;
+      height: 1px;
+      background-color: var(--brand-gold);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(212, 175, 55, 0.7);
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- 
+    ============================================
+    STACY BARILONE | BRAND AMBASSADOR WEBSITE
+    Production-ready single-file site (with clean local images folder).
+    Built with HTML + Tailwind CDN + vanilla JS.
+
+    FOLDER STRUCTURE (recommended):
+    stacy-barilone-site/
+      index.html
+      images/
+        purple-dress.jpg
+        stage-performance.jpg
+        mini-activation.jpg
+
+    CUSTOMIZATION GUIDE:
+    - Photos: All images live in the images/ folder with clean names. Replace anytime.
+    - Copy: All text is plain and ready to edit.
+    - Form: Demo-only. Wire to Formspree / EmailJS / Netlify / your backend (see JS comments).
+    - Name / Logo: Search "Stacy Barilone".
+    - Colors: Exact navy #0D1B2A, gold #D4AF37, red #9C1F1F used sparingly for trim only.
+    ============================================
+  -->
+
+  <!-- STICKY NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-brand-navy/95 backdrop-blur-md border-b border-white/10 transition-all">
+    <div class="container-brand">
+      <div class="flex items-center justify-between py-4 md:py-5">
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-x-2">
+          <span class="text-2xl font-bold tracking-wider text-brand-gold">Stacy Barilone</span>
+          <span class="hidden sm:inline text-sm tracking-[0.12em] text-white/60">| Brand Ambassador</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-x-9">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#approach" class="nav-link">Approach</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:block">
+          <a href="#contact" class="btn-gold text-xs tracking-[0.08em] px-6 py-3">Book Me</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="mobile-menu-btn"
+                class="md:hidden text-brand-gold p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-navy border-t border-white/10 mobile-menu">
+      <div class="container-brand py-6 flex flex-col gap-y-4 text-sm">
+        <a href="#about" class="nav-link py-2 mobile-nav-link">About</a>
+        <a href="#experience" class="nav-link py-2 mobile-nav-link">Experience</a>
+        <a href="#approach" class="nav-link py-2 mobile-nav-link">Approach</a>
+        <a href="#services" class="nav-link py-2 mobile-nav-link">Services</a>
+        <a href="#contact" class="nav-link py-2 mobile-nav-link">Contact</a>
+        
+        <a href="#contact" class="btn-gold w-full justify-center mt-2 mobile-nav-link">Book Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="hero" class="pt-20 md:pt-24">
+    <div class="container-brand">
+      <div class="grid md:grid-cols-12 gap-x-10 lg:gap-x-16 items-center min-h-[85vh] md:min-h-[78vh] py-12 md:py-16">
+        
+        <!-- Hero Content -->
+        <div class="md:col-span-7 lg:col-span-7">
+          <div class="max-w-3xl">
+            <p class="section-eyebrow mb-4">Brand Ambassador • Event Host • Experience Creator</p>
+            
+            <h1 class="text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-[0.92] mb-6 gold-text-bold">
+              Stacy Barilone
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-[#CFCFCF] mb-4">
+              Brand Ambassador &amp; Event Host
+            </p>
+            
+            <p class="text-xl md:text-2xl leading-tight text-[#CFCFCF] mb-10 max-w-2xl">
+              I don’t just represent brands. I learn them, embody them, and make people feel them.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#contact" class="btn-gold text-sm px-9 py-4">Book Me</a>
+              <a href="#approach" class="btn-gold-outline text-sm px-9 py-4">See My Approach</a>
+            </div>
+            
+            <p class="mt-8 text-sm text-white/50 max-w-md">
+              Creating authentic connections at national rallies, dealership activations, and high-energy lifestyle events.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Visual (stage energy) -->
+        <div class="md:col-span-5 lg:col-span-5 mt-12 md:mt-0">
+          <div class="relative">
+            <!-- Fixed framing: same aspect but wrapper + object-top so head isn't cropped on the singing photo -->
+            <div class="overflow-hidden aspect-[4/3.2]">
+              <img 
+                src="images/stage-performance.jpg" 
+                alt="Stacy Barilone on stage with microphone, wearing a fur vest and delivering high-energy hosting under red lights"
+                class="photo-elegant w-full h-full object-cover object-top"
+                loading="eager">
+            </div>
+            <div class="absolute -bottom-4 -right-4 hidden lg:block w-2/3 border border-brand-red/30 bg-brand-navy/80 p-5 z-10">
+              <p class="text-xs tracking-widest text-brand-gold/70">LIVE • AUTHENTIC • MEMORABLE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section bg-[#0A1623]">
+    <div class="container-brand">
+      <div class="grid lg:grid-cols-12 gap-x-12 lg:gap-x-20 items-start">
+        
+        <!-- Copy (exact from Copy agent) -->
+        <div class="lg:col-span-7">
+          <p class="section-eyebrow mb-3">Meet Stacy</p>
+          <h2 class="text-4xl md:text-5xl font-bold tracking-tight gold-underline mb-10">About</h2>
+          
+          <div class="prose prose-invert max-w-none text-[15.5px] leading-relaxed text-[#D1D1D1] space-y-6">
+            <p>I’m Stacy Barilone, and I’ve built my career on showing up fully prepared, genuinely excited, and ready to connect. Excellent time management and reliability are non-negotiable for me—when you book me, you get someone who arrives on time, stays present, and handles every detail with care. My public speaking is confident and clear, whether I’m leading a conversation with a small group or addressing a crowd at a major rally.</p>
+            
+            <p>My energy is lively and vibrant without ever feeling forced. I’m a quick learner who dives deep into each brand, absorbing the details, the story, and the spirit so I can embody it authentically. I don’t recite brochures. I believe in what I’m representing, and that belief comes through in every conversation, every demo, and every moment on stage or in the crowd.</p>
+            
+            <p>I set the tone for events and make them feel special and real. From motorcycle rallies to polished dealership activations, I create spaces where people feel welcomed, excited, and part of something memorable. If you’re looking for a partner who brings heart, professionalism, and infectious enthusiasm, I’d love to work with you.</p>
+          </div>
+          
+          <div class="mt-8">
+            <a href="#contact" class="btn-gold-outline text-xs tracking-[0.08em] px-7 py-3.5 inline-flex">Let’s Work Together</a>
+          </div>
+        </div>
+
+        <!-- Photo (lavender dress - warm &amp; approachable) -->
+        <div class="lg:col-span-5 mt-10 lg:mt-4">
+          <!-- Fixed framing: taller aspect + object-top so her head isn't cropped -->
+          <div class="overflow-hidden aspect-[4/5] w-full">
+            <img 
+              src="images/purple-dress.jpg" 
+              alt="Stacy Barilone smiling warmly with confident, approachable energy in a light purple dress beside an RV at an outdoor event"
+              class="photo-elegant w-full h-full object-cover object-top">
+          </div>
+          <p class="text-[10px] tracking-[2px] text-white/40 mt-3 pl-1">CONFIDENT • RELIABLE • VIBRANT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH / SIGNATURE STRENGTHS (exact copy from Copy agent) -->
+  <section id="approach" class="section">
+    <div class="container-brand">
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <p class="section-eyebrow mb-3">What Sets Me Apart</p>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight gold-underline">Approach &amp; Signature Strengths</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        
+        <div class="premium-card p-8 md:p-9">
+          <h3 class="text-2xl font-semibold gold-text mb-4 card-gold-underline">Brand Embodiment</h3>
+          <p class="text-[#D1D1D1] leading-relaxed">I don’t just wear your brand—I live it. Audiences sense the difference in my knowledge and passion, creating deeper engagement and stronger emotional connections that lead to better recall and loyalty.</p>
+        </div>
+
+        <div class="premium-card p-8 md:p-9">
+          <h3 class="text-2xl font-semibold gold-text mb-4 card-gold-underline">Rapid Brand Immersion</h3>
+          <p class="text-[#D1D1D1] leading-relaxed">I absorb new products, values, and stories quickly and speak with real authority from the first interaction. Your team can focus on the big picture while I bring the brand to life without a long learning curve.</p>
+        </div>
+
+        <div class="premium-card p-8 md:p-9">
+          <h3 class="text-2xl font-semibold gold-text mb-4 card-gold-underline">Memorable Presence That Elevates the Room</h3>
+          <p class="text-[#D1D1D1] leading-relaxed">My vibrant yet approachable energy turns good events into standout experiences. People remember how it felt to be there, which keeps your brand top of mind long after the day ends.</p>
+        </div>
+
+        <div class="premium-card p-8 md:p-9">
+          <h3 class="text-2xl font-semibold gold-text mb-4 card-gold-underline">Authentic Connections That Build Loyalty</h3>
+          <p class="text-[#D1D1D1] leading-relaxed">I create genuine, human moments instead of scripted pitches. Attendees feel seen and excited, resulting in higher engagement, warmer leads, and lasting positive associations with your brand.</p>
+        </div>
+
+        <div class="premium-card p-8 md:p-9">
+          <h3 class="text-2xl font-semibold gold-text mb-4 card-gold-underline">High-Energy Hosting That Feels Natural</h3>
+          <p class="text-[#D1D1D1] leading-relaxed">Whether I’m MCing, guiding demos, or keeping the crowd moving, I deliver lively momentum that stays professional, welcoming, and completely on-brand.</p>
+        </div>
+
+        <div class="premium-card p-8 md:p-9">
+          <h3 class="text-2xl font-semibold gold-text mb-4 card-gold-underline">Reliability You Can Count On</h3>
+          <p class="text-[#D1D1D1] leading-relaxed">Flawless time management, clear communication, and steady professionalism mean you can trust every detail is handled. I show up ready and deliver consistently so you can relax and enjoy the results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED EXPERIENCE (exact events + copy from Copy agent) -->
+  <section id="experience" class="section bg-[#0A1623]">
+    <div class="container-brand">
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <p class="section-eyebrow mb-3">Selected Work</p>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight gold-underline">Featured Experience</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
+        
+        <!-- Indian Motorcycles at Laconia -->
+        <article class="premium-card overflow-hidden flex flex-col">
+          <div class="px-8 pt-8 pb-6 flex-1">
+            <div class="uppercase tracking-[0.15em] text-xs text-brand-gold/70 mb-2">2026 • National Rally</div>
+            <h3 class="text-2xl font-semibold leading-tight mb-4 text-brand-gold">Indian Motorcycles at Laconia Bike Week</h3>
+            <p class="text-[#D1D1D1] leading-relaxed">At one of the nation’s largest motorcycle rallies, I served as brand ambassador for Indian Motorcycles, engaging thousands of passionate riders face-to-face. I embodied the brand’s heritage of power, freedom, and craftsmanship, sharing stories and answering questions with genuine enthusiasm that drew crowds and kept them talking. The activation felt as bold and authentic as the bikes themselves, driving meaningful conversations and strong brand presence throughout the weekend.</p>
+          </div>
+          <div class="px-8 pb-8">
+            <div class="text-xs uppercase tracking-widest text-white/40">Brand Ambassador • Rider Engagement</div>
+          </div>
+        </article>
+
+        <!-- MINI World Cup -->
+        <article class="premium-card overflow-hidden flex flex-col">
+          <div class="relative">
+            <img 
+              src="images/mini-activation.jpg" 
+              alt="Stacy Barilone at a MINI World Cup dealership activation, smiling confidently while holding a soccer ball in front of branded signage"
+              class="photo-elegant w-full aspect-video object-cover">
+          </div>
+          <div class="px-8 pt-7 pb-6 flex-1">
+            <div class="uppercase tracking-[0.15em] text-xs text-brand-gold/70 mb-2">Dealership Activation</div>
+            <h3 class="text-2xl font-semibold leading-tight mb-4 text-brand-gold">MINI World Cup Activation</h3>
+            <p class="text-[#D1D1D1] leading-relaxed">For a high-profile MINI World Cup event at the dealership, I delivered polished, energetic promotion that perfectly matched the brand’s fun and premium spirit. I connected personally with families, enthusiasts, and prospects, highlighting features in ways that felt exciting and approachable rather than sales-focused. Visitors left smiling with a real sense of what makes MINI special and a memorable experience they wanted to share.</p>
+          </div>
+          <div class="px-8 pb-8">
+            <div class="text-xs uppercase tracking-widest text-white/40">Energetic Promotion • Brand Experience</div>
+          </div>
+        </article>
+
+        <!-- Motorcycle Club Events -->
+        <article class="premium-card overflow-hidden flex flex-col">
+          <div class="px-8 pt-8 pb-6 flex-1">
+            <div class="uppercase tracking-[0.15em] text-xs text-brand-gold/70 mb-2">Club &amp; Lifestyle</div>
+            <h3 class="text-2xl font-semibold leading-tight mb-4 text-brand-gold">Motorcycle Club Events</h3>
+            <p class="text-[#D1D1D1] leading-relaxed">I hosted and coordinated full-scale motorcycle club events, handling everything from live band and DJ bookings to complete planning and on-site execution. By setting a high-energy yet welcoming tone from the first arrival through the final song, I created vibrant, inclusive nights that kept members engaged and coming back. My hands-on leadership ensured smooth operations and an authentic, fun atmosphere that defined the entire experience.</p>
+          </div>
+          <div class="px-8 pb-8">
+            <div class="text-xs uppercase tracking-widest text-white/40">Hosting • Full Event Production</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES (exact from Copy agent) -->
+  <section id="services" class="section">
+    <div class="container-brand">
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <p class="section-eyebrow mb-3">How I Can Help</p>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight gold-underline">Services</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-9 max-w-5xl mx-auto">
+        
+        <div class="service-item">
+          <h4 class="font-semibold text-lg text-brand-gold mb-2">Brand Ambassador Work</h4>
+          <p class="text-[#CFCFCF]">I represent your products with genuine belief and deep knowledge, creating authentic interactions at rallies, trade shows, and activations that turn interest into real connection and loyalty.</p>
+        </div>
+        
+        <div class="service-item">
+          <h4 class="font-semibold text-lg text-brand-gold mb-2">Event Hosting &amp; MC</h4>
+          <p class="text-[#CFCFCF]">With confident, clear public speaking and lively natural energy, I keep events flowing, engage every guest, and make the brand feel alive whether I’m on stage or moving through the crowd.</p>
+        </div>
+        
+        <div class="service-item">
+          <h4 class="font-semibold text-lg text-brand-gold mb-2">Event Planning &amp; Coordination</h4>
+          <p class="text-[#CFCFCF]">From initial concept to flawless on-site execution, I manage logistics, vendors, timelines, and details so your event runs smoothly and feels exactly the way you envisioned.</p>
+        </div>
+        
+        <div class="service-item">
+          <h4 class="font-semibold text-lg text-brand-gold mb-2">Experiential Activations</h4>
+          <p class="text-[#CFCFCF]">I design and deliver immersive, hands-on experiences that invite participation, spark conversations, and create shareable moments that amplify your brand long after the event is over.</p>
+        </div>
+        
+        <div class="service-item">
+          <h4 class="font-semibold text-lg text-brand-gold mb-2">Motorcycle &amp; Lifestyle Events</h4>
+          <p class="text-[#CFCFCF]">With true passion for the culture, I bring insider understanding and professional polish to bike weeks, club gatherings, product launches, and lifestyle activations that resonate with enthusiasts.</p>
+        </div>
+        
+        <div class="service-item">
+          <h4 class="font-semibold text-lg text-brand-gold mb-2">On-Site Staffing &amp; Team Leadership</h4>
+          <p class="text-[#CFCFCF]">I lead teams with clarity, positivity, and high standards, ensuring every person is aligned, energized, and consistently delivering an exceptional, on-brand experience for your attendees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (exact from Copy agent) -->
+  <section class="section bg-[#0A1623]">
+    <div class="container-brand">
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <p class="section-eyebrow mb-3">What Clients Say</p>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight gold-underline">Testimonials</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
+        
+        <div class="premium-card p-8 md:p-9 flex flex-col">
+          <div class="flex-1">
+            <p class="italic text-[17px] leading-snug text-[#E8E8E8]">“Stacy was the heartbeat of our Indian Motorcycles presence at Laconia Bike Week. She didn’t just know the product—she made every rider who stopped by feel the thrill and heritage of the brand. Our booth stayed packed with genuine conversations all weekend because of her energy and presence.”</p>
+          </div>
+          <div class="mt-8 pt-6 border-t border-white/10">
+            <p class="text-brand-gold font-medium">Brand Activation Manager</p>
+            <p class="text-sm text-white/50">Indian Motorcycles</p>
+          </div>
+        </div>
+
+        <div class="premium-card p-8 md:p-9 flex flex-col">
+          <div class="flex-1">
+            <p class="italic text-[17px] leading-snug text-[#E8E8E8]">“Stacy was the perfect fit for our MINI World Cup dealership activation. Her polished professionalism combined with infectious enthusiasm had every visitor—from first-timers to loyal owners—smiling, asking questions, and leaving excited. She didn’t just promote the brand; she made people feel it.”</p>
+          </div>
+          <div class="mt-8 pt-6 border-t border-white/10">
+            <p class="text-brand-gold font-medium">Marketing Director</p>
+            <p class="text-sm text-white/50">Local MINI Dealership</p>
+          </div>
+        </div>
+
+        <div class="premium-card p-8 md:p-9 flex flex-col">
+          <div class="flex-1">
+            <p class="italic text-[17px] leading-snug text-[#E8E8E8]">“Stacy has hosted several of our motorcycle club events, and she consistently sets the gold standard. From coordinating live bands and DJs to full on-site execution, she creates high-energy nights that feel welcoming and completely authentic. The members love her, and we keep bringing her back.”</p>
+          </div>
+          <div class="mt-8 pt-6 border-t border-white/10">
+            <p class="text-brand-gold font-medium">President</p>
+            <p class="text-sm text-white/50">Rolling Thunder Motorcycle Club</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA + CONTACT -->
+  <section id="contact" class="section">
+    <div class="container-brand">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <p class="section-eyebrow mb-3">Next Step</p>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight gold-underline mb-6">Ready to Make Your Brand Unforgettable?</h2>
+        <p class="text-lg text-[#CFCFCF] max-w-2xl mx-auto">
+          I’d love to bring my energy, preparation, and genuine enthusiasm to your next event. Whether it’s a major rally activation, a polished dealership experience, or a high-energy club night, let’s create something that feels real and stays with people.
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto">
+        <div id="form-container" class="premium-card p-8 md:p-10 lg:p-12">
+          <form id="inquiry-form" novalidate>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
+              
+              <div>
+                <label for="name" class="form-label">Name <span class="text-brand-red">*</span></label>
+                <input type="text" id="name" name="name" required class="form-input w-full rounded-none" placeholder="Your full name">
+              </div>
+
+              <div>
+                <label for="email" class="form-label">Email <span class="text-brand-red">*</span></label>
+                <input type="email" id="email" name="email" required class="form-input w-full rounded-none" placeholder="you@brand.com">
+              </div>
+
+              <div>
+                <label for="project" class="form-label">Project / Brand</label>
+                <input type="text" id="project" name="project" class="form-input w-full rounded-none" placeholder="Brand or event name">
+              </div>
+
+              <div>
+                <label for="dates" class="form-label">Preferred Dates</label>
+                <input type="text" id="dates" name="dates" class="form-input w-full rounded-none" placeholder="e.g. June 12–14 or Flexible">
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <label for="message" class="form-label">Message about the event <span class="text-brand-red">*</span></label>
+              <textarea id="message" name="message" rows="5" required class="form-input w-full rounded-none resize-y min-h-[120px]" placeholder="Tell me about the activation, audience, goals, or any specific details..."></textarea>
+            </div>
+
+            <div class="mt-6">
+              <label for="budget" class="form-label">Budget Range (optional)</label>
+              <select id="budget" name="budget" class="form-input w-full rounded-none">
+                <option value="">Prefer to discuss</option>
+                <option value="Under $1,500">Under $1,500</option>
+                <option value="$1,500 – $3,500">$1,500 – $3,500</option>
+                <option value="$3,500 – $6,000">$3,500 – $6,000</option>
+                <option value="$6,000+">$6,000+</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-gold w-full mt-8 py-4 text-sm tracking-[0.08em]">
+              Send Inquiry
+            </button>
+            
+            <p class="text-center text-xs text-white/40 mt-5">I personally review every inquiry and will reply within 48 hours.</p>
+          </form>
+        </div>
+
+        <!-- Success State -->
+        <div id="success-state" class="hidden success-state p-10 md:p-14 text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-brand-gold/10 flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </div>
+          <h3 class="text-3xl font-semibold text-brand-gold tracking-tight">Thank you, I’m excited to connect.</h3>
+          <p class="mt-4 text-[#CFCFCF] max-w-sm mx-auto">Your message has been received. I’ll personally review the details and reach out within 48 hours to discuss how we can make your event unforgettable.</p>
+          
+          <button onclick="resetForm()" class="mt-8 btn-gold-outline text-xs tracking-[0.08em] px-8 py-3">
+            Send Another Inquiry
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0A1623] border-t border-white/10 py-10 md:py-12">
+    <div class="container-brand">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-y-3 text-sm">
+        <div>
+          <span class="text-brand-gold font-semibold tracking-widest">STACY BARILONE</span>
+          <span class="text-white/40"> • Brand Ambassador</span>
+        </div>
+        <div class="text-white/40 text-xs md:text-sm tracking-wider">
+          © <span id="year"></span> All Rights Reserved
+        </div>
+        <div class="text-white/40 text-xs md:text-sm">
+          <a href="#contact" class="hover:text-brand-gold transition-colors">Book Me</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VANILLA JAVASCRIPT -->
+  <script>
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 80) {
+        navbar.classList.add('shadow-lg');
+      } else {
+        navbar.classList.remove('shadow-lg');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    function toggleMobileMenu() {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      if (isOpen) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+        mobileBtn.setAttribute('aria-expanded', 'true');
+      }
+    }
+    mobileBtn.addEventListener('click', toggleMobileMenu);
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Smooth scroll for all internal anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const navHeight = navbar.offsetHeight;
+          const offset = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+          window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Active nav highlight
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = ['about', 'experience', 'approach', 'services', 'contact'].map(id => document.getElementById(id));
+
+    function updateActiveNav() {
+      let current = '';
+      const scrollPosition = window.scrollY + 180;
+      sections.forEach(section => {
+        if (section && section.offsetTop <= scrollPosition) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+      });
+    }
+    window.addEventListener('scroll', updateActiveNav);
+    window.addEventListener('load', updateActiveNav);
+
+    // Contact form with success state
+    const form = document.getElementById('inquiry-form');
+    const formContainer = document.getElementById('form-container');
+    const successState = document.getElementById('success-state');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const required = form.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(field => {
+        if (!field.value.trim()) {
+          valid = false;
+          field.classList.add('!border-brand-red');
+          setTimeout(() => field.classList.remove('!border-brand-red'), 1800);
+        }
+      });
+      if (!valid) return;
+
+      const btn = form.querySelector('button[type="submit"]');
+      const orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      // PRODUCTION NOTE: Replace this timeout block with a real fetch to your form endpoint (Formspree, Netlify, EmailJS, etc.)
+      setTimeout(() => {
+        formContainer.style.display = 'none';
+        successState.classList.remove('hidden');
+        successState.classList.add('block');
+        successState.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        btn.disabled = false;
+        btn.textContent = orig;
+      }, 650);
+    });
+
+    window.resetForm = function() {
+      form.reset();
+      successState.classList.remove('block');
+      successState.classList.add('hidden');
+      formContainer.style.display = 'block';
+      setTimeout(() => document.getElementById('name').focus(), 120);
+    };
+
+    // Keyboard escape for mobile menu
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+        mobileBtn.focus();
+      }
+    });
+
+    console.log('%c[Stacy Barilone] Professional site initialized. Navy #0D1B2A + Gold #D4AF37 + Red trim #9C1F1F (sparingly).', 'color:#D4AF37');
+  </script>
+</body>
+</html>
