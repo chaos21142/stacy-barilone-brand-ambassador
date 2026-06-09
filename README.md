@@ -38,4 +38,4 @@ The three photos live in the `images/` folder. Drag & drop them into this repo o
 - Vanilla JS for mobile menu, smooth scroll, form handling
 - Fully responsive
 
-Created with care for Stacy Barilone's brand ambassador work.
+Created with care for Stacy Barilone's brand ambassador work..
