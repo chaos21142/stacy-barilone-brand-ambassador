@@ -311,7 +311,8 @@
     CUSTOMIZATION GUIDE:
     - Photos: All images live in the images/ folder with clean names. Replace anytime.
     - Copy: All text is plain and ready to edit.
-    - Form: Demo-only. Wire to Formspree / EmailJS / Netlify / your backend (see JS comments).
+    - Form: Demo-only (shows success). For real email, the "Book Me" buttons now use mailto.
+    - Email for Book Me buttons: Search for "stacy.barilone@gmail.com" and replace with the real address.
     - Name / Logo: Search "Stacy Barilone".
     - Colors: Exact navy #0D1B2A, gold #D4AF37, red #9C1F1F used sparingly for trim only.
     ============================================
@@ -338,7 +339,8 @@
 
         <!-- Desktop CTA -->
         <div class="hidden md:block">
-          <a href="#contact" class="btn-gold text-xs tracking-[0.08em] px-6 py-3">Book Me</a>
+          <!-- CUSTOMIZE: Replace stacy.barilone@gmail.com with Stacy's actual email address -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stacy.barilone@gmail.com&su=Booking%20Inquiry%20-%20Stacy%20Barilone&body=Hi%20Stacy%2C%0A%0AI%27d%20like%20to%20book%20you%20for%20an%20event.%0A%0APlease%20let%20me%20know%20your%20availability%20and%20details.%0A%0AThank%20you%2C%0A%5BYour%20Name%5D" class="btn-gold text-xs tracking-[0.08em] px-6 py-3">Book Me</a>
         </div>
 
         <!-- Mobile Hamburger -->
@@ -362,7 +364,8 @@
         <a href="#services" class="nav-link py-2 mobile-nav-link">Services</a>
         <a href="#contact" class="nav-link py-2 mobile-nav-link">Contact</a>
         
-        <a href="#contact" class="btn-gold w-full justify-center mt-2 mobile-nav-link">Book Me</a>
+        <!-- CUSTOMIZE: Replace stacy.barilone@gmail.com with Stacy's actual email address -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stacy.barilone@gmail.com&su=Booking%20Inquiry%20-%20Stacy%20Barilone&body=Hi%20Stacy%2C%0A%0AI%27d%20like%20to%20book%20you%20for%20an%20event.%0A%0APlease%20let%20me%20know%20your%20availability%20and%20details.%0A%0AThank%20you%2C%0A%5BYour%20Name%5D" class="btn-gold w-full justify-center mt-2 mobile-nav-link">Book Me</a>
       </div>
     </div>
   </nav>
@@ -390,7 +393,8 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4">
-              <a href="#contact" class="btn-gold text-sm px-9 py-4">Book Me</a>
+              <!-- CUSTOMIZE: Replace stacy.barilone@gmail.com with Stacy's actual email address -->
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stacy.barilone@gmail.com&su=Booking%20Inquiry%20-%20Stacy%20Barilone&body=Hi%20Stacy%2C%0A%0AI%27d%20like%20to%20book%20you%20for%20an%20event.%0A%0APlease%20let%20me%20know%20your%20availability%20and%20details.%0A%0AThank%20you%2C%0A%5BYour%20Name%5D" class="btn-gold text-sm px-9 py-4">Book Me</a>
               <a href="#approach" class="btn-gold-outline text-sm px-9 py-4">See My Approach</a>
             </div>
             
@@ -651,6 +655,7 @@
         <p class="text-lg text-[#CFCFCF] max-w-2xl mx-auto">
           I’d love to bring my energy, preparation, and genuine enthusiasm to your next event. Whether it’s a major rally activation, a polished dealership experience, or a high-energy club night, let’s create something that feels real and stays with people.
         </p>
+        <p class="mt-2 text-sm text-white/60">Prefer to email directly? <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stacy.barilone@gmail.com" class="text-brand-gold hover:underline" target="_blank">stacy.barilone@gmail.com</a> (or use the <strong>Book Me</strong> buttons above).</p>
       </div>
 
       <div class="max-w-2xl mx-auto">
@@ -695,11 +700,11 @@
               </select>
             </div>
 
-            <button type="submit" class="btn-gold w-full mt-8 py-4 text-sm tracking-[0.08em]">
+            <button type="button" id="send-inquiry-btn" class="btn-gold w-full mt-8 py-4 text-sm tracking-[0.08em]">
               Send Inquiry
             </button>
             
-            <p class="text-center text-xs text-white/40 mt-5">I personally review every inquiry and will reply within 48 hours.</p>
+            <p class="text-center text-xs text-white/40 mt-5">This will open your default email app with a pre-filled message to Stacy including everything you entered above. Review and send to complete the inquiry.</p>
           </form>
         </div>
 
@@ -710,8 +715,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M5 10l7-7m0 0l7 7m-7-7v18" />
             </svg>
           </div>
-          <h3 class="text-3xl font-semibold text-brand-gold tracking-tight">Thank you, I’m excited to connect.</h3>
-          <p class="mt-4 text-[#CFCFCF] max-w-sm mx-auto">Your message has been received. I’ll personally review the details and reach out within 48 hours to discuss how we can make your event unforgettable.</p>
+          <h3 class="text-3xl font-semibold text-brand-gold tracking-tight">Gmail tab opened.</h3>
+          <p class="mt-4 text-[#CFCFCF] max-w-sm mx-auto">A new tab should have opened in Gmail with your message pre-filled and addressed to Stacy. If it didn't open automatically, click the button below (or use one of the Book Me buttons or the email link in the footer).</p>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stacy.barilone@gmail.com" target="_blank" class="btn-gold-outline" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem 1rem; margin-top: 0.5rem; font-size: 0.8rem;">Open Gmail Compose</a>
           
           <button onclick="resetForm()" class="mt-8 btn-gold-outline text-xs tracking-[0.08em] px-8 py-3">
             Send Another Inquiry
@@ -728,12 +734,14 @@
         <div>
           <span class="text-brand-gold font-semibold tracking-widest">STACY BARILONE</span>
           <span class="text-white/40"> • Brand Ambassador</span>
+          <span class="text-xs text-white/50"> • <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stacy.barilone@gmail.com" class="hover:text-brand-gold transition-colors">stacy.barilone@gmail.com</a></span>
         </div>
         <div class="text-white/40 text-xs md:text-sm tracking-wider">
           © <span id="year"></span> All Rights Reserved
         </div>
         <div class="text-white/40 text-xs md:text-sm">
-          <a href="#contact" class="hover:text-brand-gold transition-colors">Book Me</a>
+          <!-- CUSTOMIZE email if needed -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stacy.barilone@gmail.com&su=Booking%20Inquiry%20-%20Stacy%20Barilone" class="hover:text-brand-gold transition-colors">Book Me</a>
         </div>
       </div>
     </div>
@@ -812,14 +820,13 @@
     window.addEventListener('scroll', updateActiveNav);
     window.addEventListener('load', updateActiveNav);
 
-    // Contact form with success state
+    // Contact form - Send Inquiry now directly opens email client like the Book Me buttons
     const form = document.getElementById('inquiry-form');
     const formContainer = document.getElementById('form-container');
     const successState = document.getElementById('success-state');
+    const sendBtn = document.getElementById('send-inquiry-btn');
 
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
+    function sendInquiry() {
       const required = form.querySelectorAll('[required]');
       let valid = true;
       required.forEach(field => {
@@ -831,21 +838,38 @@
       });
       if (!valid) return;
 
-      const btn = form.querySelector('button[type="submit"]');
-      const orig = btn.textContent;
-      btn.disabled = true;
-      btn.textContent = 'Sending...';
+      // Collect form data
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const project = document.getElementById('project').value.trim();
+      const dates = document.getElementById('dates').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const budget = document.getElementById('budget').value;
 
-      // PRODUCTION NOTE: Replace this timeout block with a real fetch to your form endpoint (Formspree, Netlify, EmailJS, etc.)
-      setTimeout(() => {
-        formContainer.style.display = 'none';
-        successState.classList.remove('hidden');
-        successState.classList.add('block');
-        successState.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        btn.disabled = false;
-        btn.textContent = orig;
-      }, 650);
-    });
+      // Build nice email body
+      let body = `Name: ${name}\nEmail: ${email}\n`;
+      if (project) body += `Project / Brand: ${project}\n`;
+      if (dates) body += `Preferred Dates: ${dates}\n`;
+      if (budget) body += `Budget Range: ${budget}\n`;
+      body += `\nMessage:\n${message}\n\n---\nSent from Stacy Barilone website form`;
+
+      const subject = project 
+        ? `Booking Inquiry - ${project} (via website)` 
+        : `Booking Inquiry - Stacy Barilone (via website)`;
+
+      // Use direct Gmail compose URL - more reliable than mailto when using web Gmail.
+      // This opens a new tab to Gmail compose with everything pre-filled.
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=stacy.barilone@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(gmailUrl, '_blank');
+
+      // Show confirmation
+      formContainer.style.display = 'none';
+      successState.classList.remove('hidden');
+      successState.classList.add('block');
+      successState.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    sendBtn.addEventListener('click', sendInquiry);
 
     window.resetForm = function() {
       form.reset();
